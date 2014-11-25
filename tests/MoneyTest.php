@@ -1,4 +1,7 @@
 <?php
+
+require_once(__DIR__ . '/../src/Money.php');
+
 class MoneyTest extends PHPUnit_Framework_TestCase
 {
     // ...
