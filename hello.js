@@ -4,7 +4,3 @@ function hello() {
 
 hello();
 
-
-adsasd(
-
-
