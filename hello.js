@@ -4,10 +4,3 @@ function hello() {
 
 hello();
 
-
-sdfsdf(
-
-
-
-
-
