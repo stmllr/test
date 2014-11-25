@@ -3,3 +3,5 @@ function hello() {
 }
 
 hello();
+
+this_call_broke_the_build(;
