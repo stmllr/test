@@ -3,3 +3,7 @@ php:
   - "5.5"
   - "5.4"
 script: phpunit tests/*
+
+language: node_js
+node_js:
+  - "0.10"
