@@ -3,7 +3,7 @@ node_js:
   - "0.10"
 
 before_script:
- - npm install --verbose sass
+ - gem install sass
  - npm install --verbose
 
 script:
