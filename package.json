@@ -14,8 +14,8 @@
     "grunt-contrib-sass": "0.3.0"
   },
   "scripts": {
-    "dev-build": "grunt --verbose dev"
-    "acceptance-build": "grunt --verbose acceptance"
+    "dev-build": "grunt --verbose dev",
+    "acceptance-build": "grunt --verbose acceptance",
     "production-build": "grunt --verbose production"
   }
 }
