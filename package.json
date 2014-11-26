@@ -16,6 +16,6 @@
     "grunt-contrib-sass": "0.8.1"
   },
   "scripts": {
-    "test": "grunt dev --verbose"
+    "test": "grunt build-acceptance --verbose"
   }
 }
