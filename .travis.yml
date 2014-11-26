@@ -3,8 +3,8 @@ node_js:
   - "0.10"
 
 before_script:
- - npm install
+ - npm install --verbose
 
 script:
- - npm dev
+ - grunt dev
 
