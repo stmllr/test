@@ -1,5 +1,7 @@
 module.exports = function(grunt) {
- 
+
+	'use strict';
+
 	grunt.initConfig({
 		pkg: grunt.file.readJSON("package.json"),
 		jshint: {
@@ -56,10 +58,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-sass'); 
+	grunt.loadNpmTasks('grunt-contrib-sass');
 
 	grunt.registerTask('dev', ['jshint', 'sass:dev']);
 	grunt.registerTask('acceptance', ['jshint', 'concat', 'sass:deploy', 'uglify']);
 	grunt.registerTask('production', ['jshint', 'concat', 'sass:deploy', 'uglify']);
- 
 };
