@@ -18,7 +18,8 @@ module.exports = function(grunt) {
 			dev: {
 				options: {
 					unixNewlines: true,
-					style: 'expanded'
+					style: 'expanded',
+					sourcemap: false
 				},
 				files: {
 					'css/main.css': 'scss/main.scss'
@@ -63,4 +64,5 @@ module.exports = function(grunt) {
 	grunt.registerTask('dev', ['jshint', 'sass:dev']);
 	grunt.registerTask('acceptance', ['jshint', 'concat', 'sass:deploy', 'uglify']);
 	grunt.registerTask('production', ['jshint', 'concat', 'sass:deploy', 'uglify']);
+	grunt.registerTask('default', ['jshint']);
 };
