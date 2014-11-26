@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'dist/main-<%= pkg.version %>.min.css': 'scss/main.scss'
+					'dist/main-<%= pkg.buildVersion %>.min.css': 'scss/main.scss'
 				}
 			}
 		},
@@ -39,14 +39,14 @@ module.exports = function(grunt) {
 					'js/vendor/lib.js',
 					'js/hello.js'
 				],
-				dest: 'dist/main-<%= pkg.version %>.min.js'
+				dest: 'dist/main-<%= pkg.buildVersion %>.min.js'
 			}
 		},
 
 		uglify: {
 			anyDistFile: {
 				files: {
-					'dist/main-<%= pkg.version %>.min.js': ['dist/main-<%= pkg.version %>.min.js']
+					'dist/main-<%= pkg.buildVersion %>.min.js': ['dist/main-<%= pkg.buildVersion %>.min.js']
 				}
 			}
 		},
