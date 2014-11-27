@@ -8,11 +8,12 @@ script:
 - ./build-tools/travis/run-build.sh
 deploy:
   provider: releases
-  api-key: 7mV519woqp7m9DpC7sb9Tg
+  api-key: "GITHUB OAUTH TOKEN"
   file: dist/main-${TRAVIS_BUILD_NUMBER}.min.js
   skip_cleanup: true
-  on: 
+  on:
     branch: master
 env:
   global:
-    secure: NLO6KekXXEEIvFpjDrqGae0drT7Ch0NvmpoZ2/wficI7ZJTpQhosX8SgV6udvleaQu9OtV7BPn4++Vlbl7SFdLIslAM/ixl/NT2T8Yg1y1fm3rbusRVd9skXJMivKQDoV/0boyNTI6I+OAlzbcyFOeMwmmKLLLK+9FAwxsJF8xU=
+    secure: 2UZuYCxxIXjmKo5CunUKzqTW7irU7HYeaffNgX+1I35L3PVgTaGPx4QFl4/XHWvlWhxsp6rP1O2zD25zbiik6OCVN6c3D/x4Tu1WsNN41IZI+qnZC++ViMoE455+Yz0VD5gDd/SzJRoOoN4ZMUyAiNurq7R0MJty1MwltwGhask=
+
