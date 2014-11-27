@@ -3,10 +3,10 @@ node_js:
   - "0.10"
 
 before_script:
- - .travis/setup.sh
  - gem install sass
  - npm install --verbose
 
 script:
  - .travis/setup.sh
- - grunt build-production --verbose
+ - grunt ${GRUNT_COMMAND} --verbose
+
