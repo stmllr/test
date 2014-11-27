@@ -8,9 +8,9 @@ script:
 - ./build-tools/travis/run-build.sh
 deploy:
   provider: releases
-  api_key:
-    secure: g8+uf1GCIJrXUcRxZDCI4x0XFfJvn2ua9YLp0hrTDDleNeQln+fZ2GUaZGxZlNwN3FwMu/5ymWQW4QhGUybPmuSiyeEZQexnQNT1pScCgGAW73HGBGAv9f94/TbaHcyyyYLvN2tC7HiwtxTFEHwYW8iIUh9UuPOCqOS6qYuesco=
+  api_key: ${GITHUB_OAUTH_TOKEN}
   file: dist/main-${TRAVIS_BUILD_NUMBER}.min.js
   skip_cleanup: true
   on:
+    tags: true
     branch: master
