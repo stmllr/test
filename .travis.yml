@@ -2,6 +2,10 @@ language: node_js
 node_js:
   - "0.10"
 
+env:
+ global:
+    - GRUNT_COMMAND=./.travis/get_grunt_command.sh
+
 before_script:
  - gem install sass
  - npm install --verbose
