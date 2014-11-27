@@ -1,11 +1,18 @@
 language: node_js
 node_js:
-  - "0.10"
-
+- '0.10'
 before_script:
- - gem install sass
- - npm install --verbose
-
+- gem install sass
+- npm install --verbose
 script:
- - ./build-tools/travis/run-build.sh
-
+- ./build-tools/travis/run-build.sh
+deploy:
+  provider: releases
+  api-key: 7mV519woqp7m9DpC7sb9Tg
+  file: dist/main-${TRAVIS_BUILD_NUMBER}.min.js
+  skip_cleanup: true
+  on: 
+    branch: master
+env:
+  global:
+    secure: NLO6KekXXEEIvFpjDrqGae0drT7Ch0NvmpoZ2/wficI7ZJTpQhosX8SgV6udvleaQu9OtV7BPn4++Vlbl7SFdLIslAM/ixl/NT2T8Yg1y1fm3rbusRVd9skXJMivKQDoV/0boyNTI6I+OAlzbcyFOeMwmmKLLLK+9FAwxsJF8xU=
