@@ -3,6 +3,7 @@ node_js:
   - "0.10"
 
 before_script:
+ - .travis/get_build_context.sh
  - gem install sass
  - npm install --verbose
 
