@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 BUILD_CONTEXT="dev" 
 
