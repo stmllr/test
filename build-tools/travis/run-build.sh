@@ -20,5 +20,5 @@ fi
 
 echo -e "\n========================================"
 
+echo -e "\n Executing \$grunt ${GRUNT_COMMAND} --verbose"
 grunt ${GRUNT_COMMAND} --verbose
-
