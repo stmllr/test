@@ -4,6 +4,7 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON("package.json"),
+		version: process.env.TRAVIS_BUILD_NUMBER,
 		jshint: {
 			all: [
 				'Gruntfile.js',
@@ -31,7 +32,7 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'dist/main-<%= pkg.buildVersion %>.min.css': 'scss/main.scss'
+					'dist/main-<%= version %>.min.css': 'scss/main.scss'
 				}
 			}
 		},
@@ -42,14 +43,14 @@ module.exports = function(grunt) {
 					'js/vendor/lib.js',
 					'js/hello.js'
 				],
-				dest: 'dist/main-<%= pkg.buildVersion %>.min.js'
+				dest: 'dist/main-<%= version %>.min.js'
 			}
 		},
 
 		uglify: {
 			anyDistFile: {
 				files: {
-					'dist/main-<%= pkg.buildVersion %>.min.js': ['dist/main-<%= pkg.buildVersion %>.min.js']
+					'dist/main-<%= version %>.min.js': ['dist/main-<%= version %>.min.js']
 				}
 			}
 		},
