@@ -12,5 +12,4 @@ deploy:
   file: dist/main-${TRAVIS_BUILD_NUMBER}.min.js
   skip_cleanup: true
   on:
-    tags: true
     branch: master
