@@ -62,7 +62,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 
 	grunt.registerTask('dev', ['jshint', 'sass:dev']);
-	grunt.registerTask('build-acceptance', ['jshint', 'concat', 'sass:deploy', 'uglify']);
+	grunt.registerTask('build-test', ['jshint', 'concat', 'sass:deploy', 'uglify']);
 	grunt.registerTask('build-production', ['jshint', 'concat', 'sass:deploy', 'uglify']);
 	grunt.registerTask('default', ['jshint']);
 };

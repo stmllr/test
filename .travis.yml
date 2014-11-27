@@ -2,9 +2,10 @@ language: node_js
 node_js:
   - "0.10"
 
-env:
- global:
-    - GRUNT_COMMAND=./.travis/get_grunt_command.sh
+env: 
+  global:
+    - GRUNT_COMMAND=`./.travis/get_grunt_command.sh`
+    - GRUNT_COMMAND2="build-test"
 
 before_script:
  - gem install sass
@@ -12,5 +13,4 @@ before_script:
 
 script:
  - .travis/setup.sh
- - grunt ${GRUNT_COMMAND} --verbose
-
+ - grunt $GRUNT_COMMAND2 --verbose
