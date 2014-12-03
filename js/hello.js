@@ -5,3 +5,4 @@ function hello() {
 }
 
 hello();
+hello();
