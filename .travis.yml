@@ -1,8 +1,11 @@
 language: node_js
 node_js:
-  - '0.10'
+- '0.10'
 before_script:
-  - gem install sass
-  - npm install --verbose
+- gem install sass
+- npm install --verbose
 script:
-  - ./build-tools/travis/run-build.sh
+- ./build-tools/travis/run-build.sh
+notifications:
+  slack:
+    secure: sIaZKYTr/WrNMLunE+EFr8b576Lj5bw48ZdP4lj//SFCFfE5GQDx6Yeg58yOrw2xh9uSlZomoxw0TYNdZoRp1GC4SueudpllUTaZO9MA3YpF+TbWWN++XiE1KPtyxu/kPEqphhtP9RkEfVZ1CjCdeqjcDfLme8kWN9aCU5ks++0=
