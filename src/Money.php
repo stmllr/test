@@ -15,7 +15,7 @@ class Money
 
     public function negate()
     {
-        return new Money(-1 * $this->amount) + 2;
+        return new Money(-1 * $this->amount);
     }
 
     // ...
